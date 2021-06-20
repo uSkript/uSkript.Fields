@@ -1,0 +1,73 @@
+{
+	propertyEditors	: [
+		{
+			alias		: "uSkriptString",
+			name		: "uSkript String",
+			icon		: "icon-autofill",
+			group		: "uSkript Properties",
+			editor		: {
+				view		: "~/App_Plugins/uSkript.Fields/views/uskript.string.html"
+			},
+			"prevalues"	: {
+				fields		: [
+					{
+						"label"	: "Default Value",
+						"key"	: "uskriptStringValue",
+						"view"	: "~/App_Plugins/uSkript.Fields/views/prevalues/uskriptstring.html"
+					},
+					{
+						"label"	: "Read Only",
+						"key"	: "readOnly",
+						"view"	: "boolean"
+					}
+				]
+			}
+		},
+		{
+			alias		: "uSkriptTextArea",
+			name		: "uSkript Textarea",
+			icon		: "icon-application-window-alt",
+			group		: "uSkript Properties",
+			editor		: {
+				view		: "~/App_Plugins/uSkript.Fields/views/uskript.textarea.html"
+			},
+			"prevalues"	: {
+				fields		: [
+					{
+						"label"	: "Default Text",
+						"key"	: "uskriptTextAreaValue",
+						"view"	: "~/App_Plugins/uSkript.Fields/views/prevalues/uskripttextarea.html"
+					},
+					{
+						"label"	: "Read Only",
+						"key"	: "readOnly",
+						"view"	: "boolean"
+					}
+				]
+			}
+		},
+		{
+			alias		: "uSkriptBoolean",
+			name		: "Boolean True",
+			icon		: "icon-checkbox",
+			group		: "uSkript Properties",
+			editor		: {
+				view		: "~/App_Plugins/uSkript.Fields/views/uskript.boolean.html"
+			},
+			"prevalues"	: {
+				fields		: [
+					{
+						"label"	: "Boolean True",
+						"key"	: "booleanChecked",
+						"view"	: "boolean"
+					}
+				]
+			}
+		}
+	],
+	javascript		: [
+		'~/App_Plugins/uSkript.Fields/js/uskript.string.controller.js',
+		'~/App_Plugins/uSkript.Fields/js/uskript.textarea.controller.js',
+		'~/App_Plugins/uSkript.Fields/js/uskript.boolean.controller.js'
+	]
+}
